@@ -155,6 +155,7 @@ aws:
 
 smtp:
   # hostport: "" # host:port address of SMTP server, if not empty, SMTP output is enabled
+  # tls: false # Use TLS connection (true/false). Default: true
   # authmechanism: "plain" # SASL Mechanisms : plain, oauthbearer, external, anonymous or "" (disable SASL). Default: plain
   # user: "" # user for Plain Mechanism
   # password: "" # password for Plain Mechanism

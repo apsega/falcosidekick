@@ -342,6 +342,7 @@ aws:
 
 smtp:
   # hostport: "" # host:port address of SMTP server, if not empty, SMTP output is enabled
+  # tls: true # use TLS connection (true/false), default is "true"
   # authmechanism: "plain" # SASL Mechanisms : plain, oauthbearer, external, anonymous or "" (disable SASL). Default: plain
   # user: "" # user for Plain Mechanism
   # password: "" # password for Plain Mechanism
@@ -847,6 +848,7 @@ care of lower/uppercases**) : `yaml: a.b --> envvar: A_B` :
   `emergency|alert|critical|error|warning|notice|informational|debug or "" (default)`
 - **SMTP_HOSTPORT** : "host:port" address of SMTP server, if not empty, SMTP
   output is _enabled_
+- **SMTP_TLS** : use TLS connection (true/false), default is "true"
 - **SMTP_FROM** : Sender address (mandatory if SMTP output is enabled)
 - **SMTP_TO** : comma-separated list of Recipident addresses, can't be empty
   (mandatory if SMTP output is enabled)
